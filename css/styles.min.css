@@ -1,0 +1,16 @@
+body, html { width: 100vw; height: 100vh; margin: 0px; overflow: hidden; }
+
+#computer-wrapper { background: linear-gradient(120deg, #e6c8c4 0%, #7e4f95 64%, #bae897 100%); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 100vw; height: 100vh; }
+
+#computer { margin: 0px; }
+
+#iframe-container { position: absolute; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 1vw; margin: 0px; -webkit-transform: skewY(3deg) rotate(-14deg); transform: skewY(3deg) rotate(-14deg); }
+
+.second-container { border: 10px solid black; width: 100%; height: 100%; border-radius: 10px; overflow: hidden; }
+
+iframe { width: 100%; height: 100%; }
+
+/* iframe > *{
+    border-radius: 1vw;
+} */
+/*# sourceMappingURL=styles.min.css.map */
