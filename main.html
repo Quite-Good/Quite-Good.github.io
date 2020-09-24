@@ -9,10 +9,185 @@
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
         <meta name="theme-color" content="#E6C8C4"/>
 
+        <link rel="stylesheet" href="css/styles.min.css">
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.3.0/handlebars.min.js"></script>
     </head>
-    <body style="background-color: wheat;">
-        <h1>Helloooo</h1>
+    <body>
+        <div class="page-wrapper">
+            <div id="mob-nav__container">
+                <nav class="mob-nav mob-nav--closed" id="MobMenu">
+                    <ul id="MobNavMain" data-menu="menu0" class="mob-nav__menu mob-nav__menu--parent">
+                        <li class="mob-nav__item">
+                            <a href="/about.html" class="mob-nav__link link">Who We Are</a>
+                        </li>
+                        <li class="mob-nav__item">
+                            <a href="/games.html" class="mob-nav__link link">Our Games</a>
+                        </li>
+                        <!-- <li class="mob-nav__item">
+                            <button type="button" class="mob-nav__trigger mob-nav__trigger--parent link" data-menu="menu1" onclick="toggleMenu(&quot;menu3&quot;)">
+                                Our Games
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11.4" viewBox="0 0 15 11.4" class="svg-mobile-nav-right">
+                                    <path d="M0 6.2h12.9l-4.4 4.4.7.8L15 5.7 9.2 0l-.7.7 4.4 4.5H0"></path>
+                                </svg>
+                            </button>
+                        </li> -->
+                        <li class="mob-nav__item">
+                            <a href="/contact.html" class="mob-nav__link link">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- <ul id="menu1" class="mob-nav__menu mob-nav__menu--children mob-nav__menu--closed" data-parent="MobNavMain" data-menu="menu1">
+                        <li class="mob-nav__back">
+                            <button type="button" class="mob-nav__trigger mob-nav__trigger--back" onclick="toggleMenu(&quot;menu1&quot;)">
+                                Our Games
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11.4" viewBox="0 0 15 11.4" class="svg-mobile-nav-left">
+                                    <path d="M15 5.2H2.1L6.5.8 5.8 0 0 5.7l5.8 5.7.7-.7-4.4-4.5H15"></path>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="mob-nav__item">
+                            <a href="/projects/overseer" class="mob-nav__link link">Game1</a>
+                        </li>
+                        <li class="mob-nav__item">
+                            <a href="/projects/reach" class="mob-nav__link link">Game2</a>
+                        </li>
+                    </ul> -->
+                </nav>
+            </div>
+            <div class="main-wrap">
+                <header class="site-header" id="SiteHeader" role="banner">
+                    <a class="brand" href="/index">
+                        <img src="/assets/QUITE GOOD.png">
+                    </a>
+                    <nav class="site-nav" role="navigation">
+                        <ul class="site-nav__list">
+                            <li class="site-nav__item">
+                                <a href="/about.html" class="site-nav__link site-nav__link--link">Who We Are</a>
+                            </li>
+                            <!-- <li class="site-nav__item site-nav__item--parent">
+                                <p class="site-nav__item site-nav__link site-nav__link--link">Our Games</p>
+                                <ul class="site-nav__dropdown">
+                                    <li class="site-nav__dropdown-item">
+                                        <a class="site-nav__dropdown-link" href="/resources/calendar">Game1</a>
+                                    </li>
+                                    <li class="site-nav__dropdown-item">
+                                        <a class="site-nav__dropdown-link" href="/resources/forms">Game2</a>
+                                    </li>
+                                </ul>
+                            </li> -->
+                            <li class="site-nav__item">
+                                <a href="/games.html" class="site-nav__link site-nav__link--link">Our Games</a>
+                            </li>
+                            <li class="site-nav__item">
+                                <a href="/contact.html" class="site-nav__link site-nav__link--link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="mob-nav__burger" id="MobMenuToggle" onclick="">
+                        <img id="burger" src="/assets/icons/burger.png">
+                    </button>
+                </header>
+<main>
+    <div class="main-content-wrapper">
+        <div id="mission" class="paragraph-container light">
+            <h1>Our Mission</h1>
+            <p>Bruin Spacecraft Group was founded with the intent of providing a creative and supportive environment
+                for space mission design and development at UCLA. Here, students of all backgrounds can come together,
+                united by a passion for space, to do something amazing. Here, we aim to give students the opportunity
+                to acquire the skills necessary to become leaders in the space industry.</p>
+        </div>
+        <!-- NOT READY
+        <div class="carousel-wrapper">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators >
+                <ul class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1" ></li>
+                        <li data-target="#myCarousel" data-slide-to="2" ></li>
+                </ul>
+                <!-- Slides TODO: add img alts?>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/assets/images/pictures/earth.jpg">
+                        <div class="carousel-caption">
+                            <h2>Articles!</h2>
+                            <a href="/articles/articlesHome.html"><h3>Link to cool article</h3></a>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="/assets/images/pictures/jupiter.jpg">
+                        <div class="carousel-caption">
+                            <h2>Calm down</h2>
+                            <a href="/articles/articlesHome.html"><h3>it&#x27;s a placeholder okay</h3></a>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="/assets/images/pictures/saturn.jpg">
+                        <div class="carousel-caption">
+                            <h2>Calm down</h2>
+                            <a href="/articles/articlesHome.html"><h3>it&#x27;s a placeholder okay</h3></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Left and right controls >
+                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div> -->
+
+        <div id="whatWeDo" class="dark">
+            <h1 class="title">What We Do</h1>
+            <div class="flex-container">
+                <a class="card" href="/projects/rapid">
+                    <img src="/assets/images/pictures/Rapid.png">
+                    <div class="card-container">
+                        <img src="/assets/images/Logos/Rapid Outline.png">
+                        <h3>Project Rapid</h3>
+                        <p>CubeSat Development</p>
+                    </div>
+                </a>
+                <a class="card" href="/projects/reach">
+                    <img src="/assets/images/pictures/Reach.JPG">
+                    <div class="card-container">
+                        <img src="/assets/images/Logos/Reach Outline.png">
+                        <h3>Project Reach</h3>
+                        <p>Rocket Payloads</p>
+                    </div>
+                </a>
+                <a class="card" href="/projects/overseer">
+                    <img src="/assets/images/pictures/OverseerPortrait.jpg">
+                    <div class="card-container">
+                        <img src="/assets/images/Logos/Overseer Outline.png">
+                        <h3>Project Overseer</h3>
+                        <p>High Altitude Balloons</p>
+                    </div>
+                </a>
+                <a class="card" href="/projects/forge">
+                    <img src="/assets/images/pictures/Forge.jpg">
+                    <div class="card-container">
+                        <img src="/assets/images/Logos/Forge Outline.PNG">
+                        <h3>Forge Initiative</h3>
+                        <p>Educational Program</p>
+                    </div>
+                </a>
+                <a class="card" href="/projects/endeavour">
+                    <img src="/assets/images/pictures/Endeavour.jpg">
+                    <div class="card-container">
+                        <img src="/assets/images/Logos/Endeavour Outline.png">
+                        <h3>Project Endeavour</h3>
+                        <p>Scientific Research</p>
+                    </div>
+                </a>
+            </div>
+        </div>    
+    </div>
+</main>
+
+            </div>
+        </div>
     </body>
 </html>

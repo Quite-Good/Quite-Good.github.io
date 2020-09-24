@@ -36,7 +36,14 @@ function toggleMenu(childMenu) {
 
 
 $( window ).on('load, resize', function(){
-    var win = $(this);
+    resizeMiniScreen();
+});
+$(document).ready(function(){
+    resizeMiniScreen();
+});
+
+function resizeMiniScreen(){
+    var win = $(window);
 
     var screenImage = document.getElementById('computer');
     var theImage = new Image();
@@ -72,4 +79,4 @@ $( window ).on('load, resize', function(){
         width: 500*screenImage.width/imageWidth,
         height: 375*screenImage.height/imageHeight
     })
-});
+}
