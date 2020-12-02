@@ -83,11 +83,13 @@ function resizeMiniScreen(){
 
 $(document).keydown(function(event){
     let key = String.fromCharCode(event.which).toUpperCase(); 
+    if (key == " ") key = "SPACE";
     $('#'+key).transition({y:'10px'})
     //setTimeout(function(){$('#'+key).transition({y:'0px'})}, 500)
 });
 $(document).keypress(function(event){
     let key = String.fromCharCode(event.which).toUpperCase(); 
+    if (key == " ") key = "SPACE";
     $('#'+key).transition({y:'0px'})
     //setTimeout(function(){$('#'+key).transition({y:'0px'})}, 500)
 });

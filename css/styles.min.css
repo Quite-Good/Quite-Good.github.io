@@ -241,23 +241,25 @@ div.site-nav__link:focus, div.site-nav__link:hover { color: #7E4F95; }
 
 #scene-wrapper #computer-wrapper #computer iframe { width: 100%; height: 100%; }
 
-#scene-wrapper #computer-wrapper .keyboard-grid { width: 100%; height: 15vh; display: -ms-grid; display: grid; -ms-grid-columns: 10vw auto 10vw; grid-template-columns: 10vw auto 10vw; -ms-grid-rows: 1vw 1vw 1vw 1vw 1vw 1vw; grid-template-rows: 1vw 1vw 1vw 1vw 1vw 1vw; }
+#scene-wrapper #computer-wrapper .keyboard-grid { width: 100%; height: 15vh; display: -ms-grid; display: grid; -ms-grid-columns: 10vw auto 10vw; grid-template-columns: 10vw auto 10vw; -ms-grid-rows: auto 1vw 1vw 1vw 1vw 1vw 1vw; grid-template-rows: auto 1vw 1vw 1vw 1vw 1vw 1vw; }
 
 #scene-wrapper #computer-wrapper .keyboard-grid .row { -ms-grid-column: 2; grid-column: 2; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
 #scene-wrapper #computer-wrapper .keyboard-grid .key { background-image: url(../assets/key.png); background-position: center; background-size: contain; background-repeat: no-repeat; width: 6vw; height: 2vw; text-align: center; }
 
+#scene-wrapper #computer-wrapper .keyboard-grid .key p { display: none; }
+
 #scene-wrapper #computer-wrapper .keyboard-grid .DOWN { -webkit-transform: translateY(10px); transform: translateY(10px); -webkit-animation-duration: 0.25s; animation-duration: 0.25s; }
 
-#scene-wrapper #computer-wrapper .keyboard-grid #numbers { -ms-grid-row: 1; -ms-grid-row-span: 2; grid-row: 1 / span 2; z-index: 1; }
+#scene-wrapper #computer-wrapper .keyboard-grid #numbers { -ms-grid-row: 2; -ms-grid-row-span: 2; grid-row: 2 / span 2; z-index: 1; }
 
-#scene-wrapper #computer-wrapper .keyboard-grid #top-row { -ms-grid-row: 2; -ms-grid-row-span: 2; grid-row: 2 / span 2; z-index: 2; }
+#scene-wrapper #computer-wrapper .keyboard-grid #top-row { -ms-grid-row: 3; -ms-grid-row-span: 2; grid-row: 3 / span 2; z-index: 2; }
 
-#scene-wrapper #computer-wrapper .keyboard-grid #middle-row { -ms-grid-row: 3; -ms-grid-row-span: 2; grid-row: 3 / span 2; z-index: 3; }
+#scene-wrapper #computer-wrapper .keyboard-grid #middle-row { -ms-grid-row: 4; -ms-grid-row-span: 2; grid-row: 4 / span 2; z-index: 3; }
 
-#scene-wrapper #computer-wrapper .keyboard-grid #bottom-row { -ms-grid-row: 4; -ms-grid-row-span: 2; grid-row: 4 / span 2; z-index: 4; }
+#scene-wrapper #computer-wrapper .keyboard-grid #bottom-row { -ms-grid-row: 5; -ms-grid-row-span: 2; grid-row: 5 / span 2; z-index: 4; }
 
-#scene-wrapper #computer-wrapper .keyboard-grid #space-bar { -ms-grid-row: 5; -ms-grid-row-span: 2; grid-row: 5 / span 2; z-index: 5; }
+#scene-wrapper #computer-wrapper .keyboard-grid #space-bar { -ms-grid-row: 6; -ms-grid-row-span: 2; grid-row: 6 / span 2; z-index: 5; }
 
 #scene-wrapper #computer-wrapper .keyboard-grid #space-bar .key { width: 18vw; background-size: cover; }
 /*# sourceMappingURL=styles.min.css.map */

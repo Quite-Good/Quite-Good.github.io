@@ -753,7 +753,11 @@ div.site-nav__link:focus,div.site-nav__link:hover {
             height: 15vh;
             display: grid;
             grid-template-columns: 10vw auto 10vw;
-            grid-template-rows: 1vw 1vw 1vw 1vw 1vw 1vw;
+            grid-template-rows: auto 1vw 1vw 1vw 1vw 1vw 1vw;
+            // background-image: url(../assets/Website_Keys_Rough1.png);
+            // background-size: contain;
+            // background-position: center;
+            // background-repeat: no-repeat;
             .row {
                 grid-column: 2;
                 display: flex;    
@@ -767,29 +771,32 @@ div.site-nav__link:focus,div.site-nav__link:hover {
                 width: 6vw;
                 height: 2vw;
                 text-align: center;
+                p {
+                    display: none;
+                }
             }
             .DOWN {
                 transform: translateY(10px);
                 animation-duration: 0.25s;
             }
             #numbers {
-                grid-row: 1 / span 2;
+                grid-row: 2 / span 2;
                 z-index: 1;
             }
             #top-row {
-                grid-row: 2 / span 2;
+                grid-row: 3 / span 2;
                 z-index: 2;
             }
             #middle-row {
-                grid-row: 3 / span 2;
+                grid-row: 4 / span 2;
                 z-index: 3;
             }
             #bottom-row {
-                grid-row: 4 / span 2;
+                grid-row: 5 / span 2;
                 z-index: 4;
             }
             #space-bar {
-                grid-row: 5 / span 2;
+                grid-row: 6 / span 2;
                 z-index: 5;
                 .key {
                     width: 18vw;
