@@ -11,25 +11,79 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.3.0/handlebars.min.js"></script>
+        <script type="text/javascript" src="js/jquery.transit.min.js"></script>
         <script type="text/javascript" src='js/main.js'></script>
 
         <link rel="stylesheet" href="css/styles.min.css">
     </head>
     <body>
         <!-- <script type="text/javascript" src="js/pageLoader.js"></script> -->
-        <div id="computer-wrapper">
-            <!-- <div id="computer">
-                <div class="iframe-container">
-                    <div class="second-container">
-                        <iframe src="main.html"></iframe>
+        <div id="scene-wrapper">
+            <div id="desk"></div>
+            <div id="plant"></div>
+            <div id="mug"></div>
+            <div id="computer-wrapper">
+                <div id="computer">
+                    <div class="iframe-container">
+                        <div class="second-container">
+                            <iframe src="main.html"></iframe>
+                        </div>
                     </div>
                 </div>
-            </div> -->
-            <img id="computer" src="assets/computer-transparent-background.png">
-            <div id="iframe-container">
-                <div class="second-container">
-                    <iframe src="main.html"></iframe>
-                </div>
+                <div class="keyboard-grid">
+                    <div id="numbers" class="row">
+                        <div class="key UP" id="1">1</div>
+                        <div class="key UP" id="2">2</div>
+                        <div class="key UP" id="3">3</div>
+                        <div class="key UP" id="4">4</div>
+                        <div class="key UP" id="5">5</div>
+                        <div class="key UP" id="6">6</div>
+                        <div class="key UP" id="7">7</div>
+                        <div class="key UP" id="8">8</div>
+                        <div class="key UP" id="9">9</div>
+                        <div class="key UP" id="0">0</div>
+                    </div>
+                    <div id="top-row" class="row">
+                        <div class="key UP" id="Q">Q</div>
+                        <div class="key UP" id="W">W</div>
+                        <div class="key UP" id="E">E</div>
+                        <div class="key UP" id="R">R</div>
+                        <div class="key UP" id="T">T</div>
+                        <div class="key UP" id="Y">Y</div>
+                        <div class="key UP" id="U">U</div>
+                        <div class="key UP" id="I">I</div>
+                        <div class="key UP" id="O">O</div>
+                        <div class="key UP" id="P">P</div>
+                    </div>
+                    <div id="middle-row" class="row">
+                        <div class="key UP" id="A">A</div>
+                        <div class="key UP" id="S">S</div>
+                        <div class="key UP" id="D">D</div>
+                        <div class="key UP" id="F">F</div>
+                        <div class="key UP" id="G">G</div>
+                        <div class="key UP" id="H">H</div>
+                        <div class="key UP" id="J">J</div>
+                        <div class="key UP" id="K">K</div>
+                        <div class="key UP" id="L">L</div>
+                    </div>
+                    <div id="bottom-row" class="row">
+                        <div class="key UP" id="Z">Z</div>
+                        <div class="key UP" id="X">X</div>
+                        <div class="key UP" id="C">C</div>
+                        <div class="key UP" id="V">V</div>
+                        <div class="key UP" id="B">B</div>
+                        <div class="key UP" id="N">N</div>
+                        <div class="key UP" id="M">M</div>
+                    </div>
+                    <div id="space-bar" class="row">
+                        <div class="key" id="SPACE">[SPACE]</div>
+                    </div>
+                    </div>
+                <!-- <script type="text/javascript">
+                    $(document).keypress(function(event){
+                        alert(String.fromCharCode(event.which)); 
+                    });
+                </script> -->
             </div>
         </div>
     </body>

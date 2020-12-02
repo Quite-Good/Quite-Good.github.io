@@ -80,3 +80,14 @@ function resizeMiniScreen(){
         height: 375*screenImage.height/imageHeight
     })
 }
+
+$(document).keydown(function(event){
+    let key = String.fromCharCode(event.which).toUpperCase(); 
+    $('#'+key).transition({y:'10px'})
+    //setTimeout(function(){$('#'+key).transition({y:'0px'})}, 500)
+});
+$(document).keypress(function(event){
+    let key = String.fromCharCode(event.which).toUpperCase(); 
+    $('#'+key).transition({y:'0px'})
+    //setTimeout(function(){$('#'+key).transition({y:'0px'})}, 500)
+});
