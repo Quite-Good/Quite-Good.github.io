@@ -11,6 +11,8 @@ $desk-depth: 20vw;
 html, body {
     padding: 0;
     margin: 0;
+    height: 100vh;
+    overflow-y: hidden;
 }
 .scene {
     width: 100vw;
