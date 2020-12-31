@@ -12,7 +12,7 @@ $alt-bright-blue: #2994D1;
 $navy: #203C5B;
 
 $steel-blue: #90b0c2;
-$cavern-pink: #94B4C4;
+$cavern-pink: #F1AFC6;
 $purple: #7E4F95;
 $yellow-green: #BAE897;
 
@@ -48,7 +48,8 @@ html {
 body {
     background-color: $black;
     color: $white;
-    font-family: 'Seymour One', sans-serif;
+    font-family: 'Bangers', cursive;
+    // font-family: 'Seymour One', sans-serif;
 }
 body, html {
   margin: 0;
@@ -74,7 +75,8 @@ h3 {
   font-size: 2.4rem;
 }
 h1, h2, h3 {
-    font-family: 'VT323', monospace;
+    font-family: 'Bangers', cursive;
+    // font-family: 'VT323', monospace;
 }
 #page-wrapper {
   width: 100%;
@@ -669,157 +671,3 @@ div.site-nav__link:focus,div.site-nav__link:hover {
   color:$accent-color;
   border-color: $accent-color;
 }
-
-
-#scene-wrapper {
-    background: linear-gradient(120deg, rgba(230,200,196,1) 0%, rgba(126,79,149,1) 64%, rgba(186,232,151,1) 100%);
-    width: 100vw;
-    height: 100vh;
-    #desk {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100vw;
-        height: 35vh;
-        background-color: beige;
-    }
-
-    #plant {
-        position: absolute;
-        bottom: 10vh;
-        left: 5vw;
-        background-image: url(../assets/plant.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 40vh;
-        width: 8vw;
-    }
-
-    #mug {
-        position: absolute;
-        bottom: 12vh;
-        right: 5vw;
-        background-image: url(../assets/mug.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 15vw;
-        width: 15vw;
-    }
-
-    #computer-wrapper{
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        width: 80vw;
-        height: 80vh;
-        position: absolute;
-        bottom: 10vh;
-        left: 10vw;
-        #computer {    
-            width: 80vw;
-            height: 60vh;
-            background-image: url(/assets/monitor.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            margin: 0px;
-
-            .iframe-container {
-                position: relative;
-                box-sizing: border-box;
-                border-radius: 1vw;
-                height: 46vh;
-                width: 50vw;
-                margin-top: 4vh;
-                margin-left: 15vw;
-            }
-            .second-container {
-                border: 4px solid black;
-                width: 100%;
-                height: 100%;
-                border-radius: 10px;
-                overflow: hidden;
-            }
-            iframe {
-                width: 100%;
-                height: 100%;
-            }
-        }
-        
-        .keyboard-grid {
-            width: 100%;
-            height: 15vh;
-            display: grid;
-            grid-template-columns: 10vw auto 10vw;
-            grid-template-rows: auto 1vw 1vw 1vw 1vw 1vw 1vw;
-            // background-image: url(../assets/Website_Keys_Rough1.png);
-            // background-size: contain;
-            // background-position: center;
-            // background-repeat: no-repeat;
-            .row {
-                grid-column: 2;
-                display: flex;    
-                justify-content: center;
-            }
-            .key {
-                background-image: url(../assets/key.png);
-                background-position: center;
-                background-size: contain;
-                background-repeat: no-repeat;
-                width: 6vw;
-                height: 2vw;
-                text-align: center;
-                p {
-                    display: none;
-                }
-            }
-            .DOWN {
-                transform: translateY(10px);
-                animation-duration: 0.25s;
-            }
-            #numbers {
-                grid-row: 2 / span 2;
-                z-index: 1;
-            }
-            #top-row {
-                grid-row: 3 / span 2;
-                z-index: 2;
-            }
-            #middle-row {
-                grid-row: 4 / span 2;
-                z-index: 3;
-            }
-            #bottom-row {
-                grid-row: 5 / span 2;
-                z-index: 4;
-            }
-            #space-bar {
-                grid-row: 6 / span 2;
-                z-index: 5;
-                .key {
-                    width: 18vw;
-                    background-size: cover;
-                }
-            }
-        }
-    }
-    
-    // @if (calc(1vw/1vh) > calc(image-height("/assets/computer-transparent-background.png")/image-width("/assets/computer-transparent-background.png"))) {
-    //     #computer {
-    //         height: 100vh;
-    //         width: auto;    
-    //     }
-    // } @else {
-    //     #computer {
-    //         width: 100vw;
-    //         height: auto;    
-    //     }
-    // }
-    
-    
-    
-}
-
-
