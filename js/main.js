@@ -35,51 +35,51 @@ function toggleMenu(childMenu) {
 }
 
 
-$( window ).on('load, resize', function(){
-    resizeMiniScreen();
-});
-$(document).ready(function(){
-    resizeMiniScreen();
-});
+// $( window ).on('load, resize', function(){
+//     resizeMiniScreen();
+// });
+// $(document).ready(function(){
+//     resizeMiniScreen();
+// });
 
-function resizeMiniScreen(){
-    var win = $(window);
+// function resizeMiniScreen(){
+//     var win = $(window);
 
-    var screenImage = document.getElementById('computer');
-    var theImage = new Image();
-    theImage.src = screenImage.src;
+//     var screenImage = document.getElementById('computer');
+//     var theImage = new Image();
+//     theImage.src = screenImage.src;
     
-    var imageWidth = theImage.width;
-    var imageHeight = theImage.height;
+//     var imageWidth = theImage.width;
+//     var imageHeight = theImage.height;
 
-    if (win.width()/win.height() > imageWidth/imageHeight){
-        screenImage.height = win.height();
-        screenImage.width = screenImage.height*imageWidth/imageHeight;
-    } else {
-        screenImage.width = win.width();
-        screenImage.height = screenImage.width*imageHeight/imageWidth;
-    }
+//     if (win.width()/win.height() > imageWidth/imageHeight){
+//         screenImage.height = win.height();
+//         screenImage.width = screenImage.height*imageWidth/imageHeight;
+//     } else {
+//         screenImage.width = win.width();
+//         screenImage.height = screenImage.width*imageHeight/imageWidth;
+//     }
 
-    var imageRect = screenImage.getBoundingClientRect();
-    var iframe = document.getElementById('iframe-container');
-    console.log(imageRect)
-    // let top = imageRect.top + 114*screenImage.height/imageHeight;
-    // console.log(top)
-    // let left = imageRect.left + 156*screenImage.width/imageWidth;
-    // console.log(left)
-    // iframe.top = top.toString() + "px";
-    // iframe.left = left.toString() + "px";
-    // iframe.width = 488*screenImage.width/imageWidth;
-    // iframe.height = 107*screenImage.height/imageHeight;
-    // console.log(iframe.width)
-    // console.log(iframe.height)
-    $("#iframe-container").css({
-        top: imageRect.top + 105*screenImage.height/imageHeight,
-        left: imageRect.left + 150*screenImage.width/imageWidth,
-        width: 500*screenImage.width/imageWidth,
-        height: 375*screenImage.height/imageHeight
-    })
-}
+//     var imageRect = screenImage.getBoundingClientRect();
+//     var iframe = document.getElementById('iframe-container');
+//     console.log(imageRect)
+//     // let top = imageRect.top + 114*screenImage.height/imageHeight;
+//     // console.log(top)
+//     // let left = imageRect.left + 156*screenImage.width/imageWidth;
+//     // console.log(left)
+//     // iframe.top = top.toString() + "px";
+//     // iframe.left = left.toString() + "px";
+//     // iframe.width = 488*screenImage.width/imageWidth;
+//     // iframe.height = 107*screenImage.height/imageHeight;
+//     // console.log(iframe.width)
+//     // console.log(iframe.height)
+//     $("#iframe-container").css({
+//         top: imageRect.top + 105*screenImage.height/imageHeight,
+//         left: imageRect.left + 150*screenImage.width/imageWidth,
+//         width: 500*screenImage.width/imageWidth,
+//         height: 375*screenImage.height/imageHeight
+//     })
+// }
 
 
 var alpha = 0;

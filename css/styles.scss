@@ -48,7 +48,8 @@ html {
 body {
     background-color: $black;
     color: $white;
-    font-family: 'Bangers', cursive;
+    font-family: 'Roboto', sans-serif;
+    // font-family: 'Bangers', cursive;
     // font-family: 'Seymour One', sans-serif;
 }
 body, html {
@@ -152,6 +153,7 @@ body::-webkit-scrollbar-thumb {
     -webkit-justify-content: space-between;
     -moz-box-pack: justify;
     justify-content: space-between;
+    font-family: 'Bangers', cursive;
     a {
         color: $white;
         text-shadow: 0 0 20px black;
