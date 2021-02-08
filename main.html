@@ -16,7 +16,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/flickity.css" media="screen">
 
+        <script src="js/flickity.pkgd.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src='js/main.js'></script>
     </head>
@@ -102,56 +104,41 @@
         <div id="mission" class="paragraph-container light">
             <h1>What's this? Video Games??</h1>
             <p>Quite Good was formed by a couple of goobers trying to become video game developers. 
-                What started as a passion project has turned into multiple passion projects funded by our parents.
-                Having released our first horror/thriller title, Quiet Godo, we are now developing some other project the web designer doesn't really know about.
+                Our studio first began with a horror/thriller title, Quiet Godo, a 3D challenge built with Unreal Engine.
+                Since then we have competed in at least two itch.io based game jams, placing in the top 10 out of hundreds of submissions. 
+            </p>
+            <p>
+                There is much more to come.
             </p>
         </div>
-        <!-- NOT READY
-        <div class="carousel-wrapper">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicators >
-                <ul class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1" ></li>
-                        <li data-target="#myCarousel" data-slide-to="2" ></li>
-                </ul>
-                <!-- Slides TODO: add img alts?>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="/assets/images/pictures/earth.jpg">
-                        <div class="carousel-caption">
-                            <h2>Articles!</h2>
-                            <a href="/articles/articlesHome.html"><h3>Link to cool article</h3></a>
-                        </div>
-                    </div>
-                    <div class="carousel-item ">
-                        <img src="/assets/images/pictures/jupiter.jpg">
-                        <div class="carousel-caption">
-                            <h2>Calm down</h2>
-                            <a href="/articles/articlesHome.html"><h3>it&#x27;s a placeholder okay</h3></a>
-                        </div>
-                    </div>
-                    <div class="carousel-item ">
-                        <img src="/assets/images/pictures/saturn.jpg">
-                        <div class="carousel-caption">
-                            <h2>Calm down</h2>
-                            <a href="/articles/articlesHome.html"><h3>it&#x27;s a placeholder okay</h3></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Left and right controls >
-                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
-            </div>
-        </div> -->
 
-   
+        <div class="gallery-wrap">
+            <h1>Featured Games</h1>
+            <div class="gallery js-flickity"
+                data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell">
+                    <a href="https://quite-good.itch.io/quiet-godo">
+                        <img src="assets/QuietGodo.png">
+                    </a>
+                </div>
+                <div class="gallery-cell">
+                    <a href="https://quite-good.itch.io/purgatorycory">
+                        <img src="assets/PurgatoryCory.png">
+                    </a>
+                </div>
+                <div class="gallery-cell">
+                    <a href="https://quite-good.itch.io/mech-armada-overdrive">
+                        <img src="assets/MechArmadaOverdrive.png">
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
+
+<footer>
+    
+</footer>
 
             </div>
         </div>
