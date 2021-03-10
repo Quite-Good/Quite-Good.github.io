@@ -509,46 +509,38 @@ div.site-nav__link:focus,div.site-nav__link:hover {
         margin: 10vh 0;
     }
 }
-
-
-.imageCarousel {
-    height: 60vh;
-    margin: 0px auto;
-    width: 100%;
-    border-bottom: double #07167a;
-}
-
-.carousel-item {
-    height: 60vh;
-    img {
-      height: 100%;
-      display: block;
-      margin: auto;
-      object-fit: cover;
-    }
-}
-
-.carousel-caption {
-    width: 50%;
-    display: block;
-    margin: auto;
-    vertical-align: middle;
-    font-weight: bold;
-
+  
+.gallery-wrap {
     h1 {
-        font-size: 5rem;
-        font-weight: bold;
+        color: $black;
+        padding-left: 8vw;
     }
-    h2 {
-        font-size: 4rem;
-        font-weight: bold;
-    }
-    h3 {
-        font-size: 3rem;
-        font-weight: bold;
+}
+.gallery {
+    background-color: $white;
+    width: 100vw;
+    height: 50vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.gallery-cell {
+    width: 66%;
+    height: 100%;
+    margin-right: 2vw;
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    img {
+        width: 100%;
+        height: auto;
     }
 }
 
+.main-wrap {
+    background-color: $white;
+}
 .main-content-wrapper {
     width: 100%;
 }
@@ -580,6 +572,11 @@ div.site-nav__link:focus,div.site-nav__link:hover {
     }
 }
 
+footer {
+    width: 100vw;
+    height: 10vh;
+    background-color: $steel-blue;
+}
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -673,3 +670,4 @@ div.site-nav__link:focus,div.site-nav__link:hover {
   color:$accent-color;
   border-color: $accent-color;
 }
+
