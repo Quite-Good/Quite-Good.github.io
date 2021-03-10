@@ -84,29 +84,32 @@ function toggleMenu(childMenu) {
 
 var alpha = 0;
 var beta = 0;
+//key animation
 $(document).keydown(function(event){
     let key = String.fromCharCode(event.which).toUpperCase(); 
     if (key == " ") key = "SPACE";
-    $('#'+key).transition({y:'10px'})
-    setTimeout(function(){$('#'+key).transition({y:'0px'})}, 500)
+    try{
+        $('#'+key).transition({y:'10px'})
+        setTimeout(function(){$('#'+key).transition({y:'0px'})}, 500)
+    } catch{
+        //console.log(key)
+    }
 });
-$(document).keypress(function(event){
+//room animation
+$(document).keydown(function(event){
     let key = String.fromCharCode(event.which).toUpperCase(); 
-    if (key == " ") key = "SPACE";
-    $('#'+key).transition({y:'0px'})
-    setTimeout(function(){$('#'+key).transition({y:'0px'})}, 500)
-
-    if (key == "A"){
-        beta = beta-5;
+    
+    if (key == "A" || key == "%"){
+        beta = beta-5; //left
     }
-    else if (key == "D"){
-        beta = beta+5;
+    else if (key == "D" || key == "'"){
+        beta = beta+5; //right
     }
-    else if (key == "W"){
-        alpha = alpha+5;
+    else if (key == "W" || key == "&"){
+        alpha = alpha+5; //up
     }
-    else if (key == "S"){
-        alpha = alpha-5;
+    else if (key == "S" || key == "("){
+        alpha = alpha-5; //down
     }
     else {
         return
@@ -115,4 +118,12 @@ $(document).keypress(function(event){
     $(".room").css({
         'transform' : 'rotateX(' + alpha + 'deg) rotateY(' + beta + 'deg) translateZ(40vw)'
     })
+});
+
+$( document ).ready(function() {
+    $(".control").addClass('shadow-pulse');
+    $(".control").on('animationend', function(){    
+    $(".control").removeClass('shadow-pulse');
+        // do something else...
+    });
 });

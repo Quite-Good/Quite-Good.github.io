@@ -2,6 +2,7 @@ $steel-blue: #90b0c2;
 $cavern-pink: #F1AFC6;
 $purple: #7E4F95;
 $yellow-green: #BAE897;
+$bright-orange: #ff5b00;
 
 $room-width: 100vw;
 $room-height: 100vh;
@@ -144,7 +145,7 @@ p {
 }
 .front-wall   { background-color: none; }
 .right-wall  { background-color: $steel-blue; }
-.back-wall   { background-color:#ff5b00; }
+.back-wall   { background-color:$bright-orange; }
 .left-wall   { background: linear-gradient(#fff, #eee); }
 .ceiling { 
     background-color: #F5F6F7;
@@ -290,6 +291,26 @@ p {
                 width: 18vw;
                 background-size: cover;
             }
+        }
+        @keyframes shadowPulse {
+            0% {
+                box-shadow: none;
+            }
+
+            33% {
+                box-shadow: 0px 1vw $bright-orange;
+            }
+        
+            100% {
+                box-shadow: none;
+            }
+        }
+        
+        .shadow-pulse {
+            animation-name: shadowPulse;
+            animation-duration: 2.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
         }
     }
 }
