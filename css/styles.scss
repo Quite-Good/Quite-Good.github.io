@@ -515,26 +515,37 @@ div.site-nav__link:focus,div.site-nav__link:hover {
         color: $black;
         padding-left: 8vw;
     }
+    // width: 100vw;
+    // display: flex;
+    // justify-content: center;
+    // flex-direction: column;
 }
 .gallery {
+    margin: auto;
     background-color: $white;
     width: 100vw;
-    height: 50vh;
+    height: 40vh;
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
+@media screen and (min-width: $tablet) {
+    .gallery {
+      height: 66vh;
+    }
+  }
 
 .gallery-cell {
-    width: 66%;
     height: 100%;
+    width: 66%;
     margin-right: 2vw;
     padding: 2vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
     img {
-        width: 100%;
-        height: auto;
+        // min-width: 80%;
+        height: 100%;
+        object-fit: contain;
     }
 }
 
